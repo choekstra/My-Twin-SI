@@ -4,7 +4,8 @@ from context import TWIN_SYSTEM_PROMPT
 from tools import tools, handle_tool_calls
 from styles import CSS, JS, EXAMPLES
 from dotenv import load_dotenv
-import gradio as gr
+
+gr = import_module("gradio")
 
 OpenAI = import_module("openai").OpenAI
 
