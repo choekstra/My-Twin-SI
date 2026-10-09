@@ -30,7 +30,6 @@ def chat(message, history):
         response = openai.chat.completions.create(model=MODEL_NAME, messages=messages, tools=tools)
     return response.choices[0].message.content
 
-
 if __name__ == "__main__":
     gr.ChatInterface(
         chat,
